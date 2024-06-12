@@ -29,6 +29,9 @@ EOF
     yor_name             = "web_host"
     yor_trace            = "123c7258-d218-4772-9083-52c921603dda"
   }
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 
 resource "aws_ebs_volume" "web_host_storage" {
